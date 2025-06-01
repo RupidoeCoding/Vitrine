@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>League of legends</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Introduction au jeux League Of Legends">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Stratégie">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="image/logo_riot.ico" type="image/ico">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body class="backindex">
+    <noscript>Utilisation du Javascript pour la vidéo de fond</noscript>
+    <!--Haut de Page-->
+    <header class="titre">
+        <img src="image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Introduction au jeu League Of Legends</h1>
+        <img src="image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <div id="video_fond">
+            <video id="lol2025" autoplay muted controls>
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+
+        <section class="hautindex">
+            <p id="encre">(accedez à la <a href="#navigation">navigation</a>)</p>
+            <b>Se connecter : </b>
+            <label for="nameutilisateur">Nom d'utilisateur</label>
+            <input type="text" id="nameutilisateur" name="user_name">
+
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" name="user_password">
+
+            <button id="boutonidentification">Valider</button>
+
+            <aside id="message"></aside>
+        </section>
+
+        <div class="parallax">
+            <section>
+                <h2>Qu'est-ce que le League of Legends ?</h2>
+                <p>League of Legends (abrégé LoL) est un jeu vidéo sorti en 2009 de type arène de bataille en ligne, free-to-play, développé et édité par Riot Games sur Windows et Mac OS.</p>
+            </section>
+
+            <section>
+                <h3>Mode de Jeu</h3>
+                <p>Le mode principal du jeu voit s'affronter deux équipes de 5 joueurs en temps réel dans des parties d'une durée d'environ une demi-heure, chaque équipe occupant et défendant sa propre base sur la carte. Chacun des dix joueurs contrôle un personnage à part entière parmi les 170 qui sont proposés. Ces personnages, connus sous le nom de « champions » dans le jeu, disposent de compétences uniques et d'un style de jeu qui leur est propre. Ils gagnent en puissance au fil de la partie en amassant des points d'expérience ainsi qu'en achetant des objets, dans le but de battre l'équipe adverse.</p>
+            </section>
+        
+            <section>
+                <h3 >Objectif</h3>
+                <p>L'objectif d'une partie est de détruire le « Nexus » ennemi, une large structure située au centre de chaque base. D'autres modes de jeu, généralement moins compétitifs et se basant quasiment toujours sur le mode principal, sont également présents à l'exception de Teamfight Tactics, un auto battler sorti en 2019 sans grand rapport avec le mode principal et qui dispose de sa propre communauté.</p>
+            </section>
+
+            <section>
+                <h3>Un phénomène mondial</h3>
+                <p>Initialement inspiré de Defense of the Ancients, un ancien mod de Warcraft III, le jeu est publié le 27 octobre 2009 et adopte dès sa sortie un modèle économique « freemium ». Il est souvent considéré comme le jeu vidéo ayant la plus large scène compétitive au monde, ses compétitions étant internationales et réunissant d'importantes audiences. Le Championnat du monde de League of Legends 2019 (en), par exemple, réunissait plus de 44 millions de spectateurs simultanés lors de ses pics de popularité, en novembre 2019.
+                League of Legends a reçu des retours généralement positifs de la critique, gagnant des prix pour son accessibilité, le design de ses personnages et sa compétitivité. En juillet 2012, il était le premier jeu vidéo sur ordinateur en nombre d'heures jouées en Europe et aux États-Unis. Son importante popularité a conduit à la création de produits dérivés tels que des clips musicaux, des bandes dessinées, des nouvelles, des figurines, et d'une série d'animation nommée Arcane.
+                Le succès du jeu a également donné naissance à plusieurs autres jeux vidéo situés dans le même univers, tels que Legends of Runeterra, un jeu de cartes à collectionner, Ruined King: A League of Legends Story, un jeu de rôle au tour par tour, et League of Legends: Wild Rift, une adaptation sur mobile de LoL.</p>
+            </section>
+
+            <section>
+                <p>Lien vers la page officiel de :<a href="https://www.leagueoflegends.com/fr-fr/"> League Of Legends</a></p>
+            </section>
+        </div>
+    </main>
+        <!--Bas de Page-->
+        <footer>
+            <nav id="navigation" class="bouton">
+                <button class="stylebouton" onclick="window.location.href='index.html';">Qu'est-ce que le League of Legends ?</button>
+                <button class="stylebouton" onclick="window.location.href='assets/histoire.html';">Regions</button>
+                <button class="stylebouton" onclick="window.location.href='assets/strategie.html';">Comment jouer ?</button>
+                <button class="stylebouton" onclick="window.location.href='assets/formulaire.html';">Formulaire d'inscription</button>
+                <button class="stylebouton" id="unmute-btn" style="display:none;">Activer le son</button>
+                <button class="stylebouton" id="mute-btn">Désactiver le son</button>
+            </nav>
+        </footer>
+    <!--Javascript-->
+    <script src="javascript/indexvideo.js"></script>
+    <script src="javascript/login.js"></script>
+</body>
