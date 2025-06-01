@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>La stratégie sur LOL</title>
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La stratégie du jeu League Of Legends">
+    <meta name="author" content="Rupidoe">
+    <meta name="keywords" content="League Of Legends, Histoire, Stratégie">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../image/logo_riot.ico" type="image/ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/strategie.css">
+</head>
+
+<body>
+    <!-- Haut de Page -->
+    <noscript>Utilisation du Javascript pour l'interaction sur le site</noscript>
+    <header class="titre backgroundhautbas">
+        <img src="../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>La stratégie du jeu League Of Legends</h1>
+        <img src="../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+
+    <!-- Zone principale -->
+    <main class="stratbackground">
+        <section class="strategie2d">
+            <aside class="gauche">
+                <figure>
+                    <button onclick="changeImage('../image/nexusbzoom.png', 'Le nexus, qu\'il soit rouge ou bleu, est le coeur de votre base. Si le vôtre est détruit, la partie est perdue.')">
+                        <img src="../image/nexusb.png" alt="Nexus allié">
+                    </button>
+                    <figcaption>Nexus allié</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage('../image/nexusrzoom.png', 'Le nexus, qu\'il soit rouge ou bleu, est le coeur de votre base. Si le vôtre est détruit, la partie est perdue')">
+                        <img src="../image/nexusr.png" alt="Nexus ennemi">
+                    </button>
+                    <figcaption>Nexus ennemi</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage('../image/tourellezoom.png', 'La tourelle est une structure de défense qui attaque automatiquement l\'ennemi lorsque celui-ci est à portée. La garder en vie le plus longtemps possible est très important')">
+                        <img src="../image/tourelle.png" alt="Tourelle">
+                    </button>
+                    <figcaption>Tourelle</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage('../image/inhibiteurzoom.png', 'L\'Inhibiteur est une structure importante du jeu. S\'il est détruit par l\'équipe adverse, celle-ci voit ses sbires améliorés.')">
+                        <img src="../image/inhibiteur.png" alt="Inhibiteur">
+                    </button>
+                    <figcaption>Inhibiteur</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage('../image/nashorzoom.png', 'Le Nashor est un monstre épique de la jungle. L\'équipe qui le vainc reçoit une aura violette donnant un boost à l\'équipe et aux sbires.')">
+                        <img src="../image/nashor.png" alt="Nashor">
+                    </button>
+                    <figcaption>Nashor</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage('../image/dragonzoom.png', 'Le Dragon est un monstre épique donnant des effets à l\'équipe qui le vainc. Gagnez-en quatre, et vous pourrez obtenir son âme.')">
+                        <img src="../image/dragon.png" alt="Dragon">
+                    </button>
+                    <figcaption>Dragon</figcaption>
+                </figure>
+                
+            </aside>
+
+            <figure class="droit">
+                <img id="displayImage1" class="hidden" src="../image/nexusbzoom.png" alt="image1">
+                <p id="displayText" class="hidden"></p>
+            </figure>
+        </section>
+
+        <section class="map2d">
+            <aside class="gauche2">
+                <figure>
+                    <button onclick="changeImage2('../image/toplane.png')">
+                        <img src="../image/toplaner.png" alt="toplane">
+                    </button>
+                    <figcaption>Toplane</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage2('../image/jungle.png')">
+                        <img src="../image/jungler.png" alt="jungler">
+                    </button>
+                    <figcaption>Jungler</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage2('../image/midlane.png')">
+                        <img src="../image/midlaner.png" alt="midlane">
+                    </button>
+                    <figcaption>Midlane</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage2('../image/botlane.png')">
+                        <img src="../image/botlaner.png" alt="botlane">
+                    </button>
+                    <figcaption>Botlane</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changeImage2('../image/supplane.png')">
+                        <img src="../image/support.png" alt="support">
+                    </button>
+                    <figcaption>Support</figcaption>
+                </figure>    
+            </aside>
+
+            <figure class="droit2">
+                <img id="displayImage2" class="hidden" src="../image/toplane.png" alt="image2">
+            </figure>
+        </section>
+
+        <section class="summoners">
+            <aside class="droit3">
+                <figure>
+                    <button onclick="changevid('../Video/saut_eclair_vid.mkv')">
+                        <img src="../image/saut_eclair.png" alt="saut_eclair">
+                    </button>
+                    <figcaption>Saut éclair</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/soin_vid.mkv')">
+                        <img src="../image/soin.png" alt="soin">
+                    </button>
+                    <figcaption>Soin</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/barriere_vid.mkv')">
+                        <img src="../image/barriere.png" alt="barriere">
+                    </button>
+                    <figcaption>Barrière</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/fantome_vid.mkv')">
+                        <img src="../image/fantome.png" alt="fantome">
+                    </button>
+                    <figcaption>Fantôme</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/fatigue_vid.mkv')">
+                        <img src="../image/fatigue.png" alt="fatigue">
+                    </button>
+                    <figcaption>Fatigue</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/embrasement_vid.mkv')">
+                        <img src="../image/embrasement.png" alt="embrasement">
+                    </button>
+                    <figcaption>Embrasement</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/teleportation_vid.mkv')">
+                        <img src="../image/teleportation.png" alt="teleportation">
+                    </button>
+                    <figcaption>Teleportation</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/purge_vid.mkv')">
+                        <img src="../image/purge.png" alt="purge">
+                    </button>
+                    <figcaption>Purge</figcaption>
+                </figure>
+                
+                <figure>
+                    <button onclick="changevid('../Video/chatiment_vid.mkv')">
+                        <img src="../image/chatiment.png" alt="chatiment">
+                    </button>
+                    <figcaption>Châtiment</figcaption>
+                </figure>
+                
+            </aside>
+
+            <figure class="gauche3">
+                <video id="displayvid" class="hidden"></video> 
+            </figure>
+        </section>
+
+        <section class="text">
+            <p>La stratégie sur League of Legends repose sur plusieurs aspects clés qui permettent de maximiser ses chances de victoire. Le jeu se déroule en 5 contre 5 sur la carte de la Faille de l’invocateur, où chaque joueur incarne un champion avec des compétences uniques. L’objectif principal est de détruire le Nexus ennemi, mais plusieurs stratégies sont mises en place pour y parvenir.</p>
+            <p>Tout d’abord, la répartition des rôles et des lanes est cruciale. Chaque joueur occupe une position spécifique : la top lane, la mid lane, la bot lane (composée d’un ADC et d’un support) et la jungle. Chacun de ces rôles a des responsabilités différentes, comme dominer son adversaire en duel, soutenir ses coéquipiers ou contrôler les objectifs neutres.</p>
+            <p>Ensuite, la gestion des ressources est essentielle. Il faut bien last-hit les sbires pour obtenir de l’or et acheter des objets améliorant les statistiques du champion. La vision joue aussi un rôle clé, en plaçant des balises (wards) pour éviter les embuscades et surveiller les déplacements ennemis.</p>
+            <p>Les objectifs neutres, comme les dragons, le Baron Nashor et les tourelles, influencent énormément l’issue d’une partie. Une équipe coordonnée qui sécurise ces objectifs prend un avantage stratégique et économique significatif.</p>
+            <p>Enfin, la communication et l’adaptabilité sont primordiales. Une équipe qui sait s’adapter aux actions adverses, changer de stratégie en fonction du déroulement de la partie et jouer collectivement aura plus de chances de l’emporter.</p>
+            <p>En résumé, League of Legends est un jeu de stratégie où la prise de décision, la gestion des ressources et le travail d’équipe sont indispensables pour atteindre la victoire.</p>
+            <p>Pour plus d'immersion, voici une ancienne map 3D du jeu pouvant être explorée.</p>
+        </section>
+
+        <!-- API Sketchfab -->
+        <iframe 
+            id="sketchfab" 
+            src="https://sketchfab.com/models/24c2a1468ef44df0925b5c84fc7587c0/embed" 
+            allow="accelerometer; gyroscope; magnetometer; fullscreen; autoplay;xr-spatial-tracking">
+        </iframe>
+
+
+    </main>
+
+    <!-- Bas de Page -->
+    <footer class="backgroundhautbas">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../index.html';">Qu'est-ce que League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='strategie.html';">Comment jouer ?</button>
+            <button class="stylebouton" onclick="window.location.href='formulaire.html';">Formulaire d'inscription</button>
+        </nav>
+        Site web sans but commercial
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript/strategie.js"></script>
+</body>
+</html>

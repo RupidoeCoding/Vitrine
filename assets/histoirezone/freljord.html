@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Freljord</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Freljord">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Freljord">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../image/logo_freljord.JPG" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/histoire.css">
+</head>
+
+<body>
+    <!--Haut de Page-->
+    <header class="titre backgroundhautbas">
+        <img src="../../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Freljord une région de Runeterra </h1>
+        <img src="../../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <section class="freljord">
+            <article>
+				<img src="../../image/Freljord.jpg" alt= "représentation de Freljord" class="img">
+				<p>Freljord est une terre inhospitalière et hostile dont les habitants sont des guerriers-nés, contraints de persévérer envers et contre tout.</p>
+
+				<p>Aussi fières qu'elles sont outrageusement indépendantes, les tribus de Freljord sont souvent considérées comme barbares et sauvages par leurs voisins de Valoran, lesquels ignorent les traditions ancestrales qui les ont façonnées. Il y a plusieurs milliers d'années, l'alliance entre les sœurs Avarosa, Serylda et Lissandra fut brisée lorsqu'une guerre menaça de ravager tout Runeterra à son insu, ce qui plongea les territoires du nord dans le chaos d'un hiver quasi permanent. De nos jours, seuls les mortels exceptionnels qui semblent immunisés contre les ravages du feu ou de la glace sont destinés, ou tout du moins capables de gouverner.</p>
+
+				<p>Malgré les efforts des Gardiens du givre, nombre de mythes et légendes relatent encore les récits des dieux anciens, yétis étranges et autres Gardiens des esprits. Les maraudeurs de la Griffe hivernale s'aventurent chaque année un peu plus loin, tourmentant Demacia au sud et Noxus à l'est. Finalement, en quête d'une destinée meilleure, les tribus indépendantes et irascibles ont commencé l'une après l'autre à accorder leur allégeance à Ashe, la jeune reine des Avarosans.</p>
+
+				<p>L'avenir, pourtant, n'en reste pas moins maussade. Tôt ou tard, la guerre reviendra à Freljord, et nul ne peut espérer y échapper.</p>
+            </article>
+        </section>
+
+        <section class="carousel freljord">
+            <h2>Personnages de Freljord</h2>
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <ul class="carousel-slides">
+                <li class="carousel-slide" id="s1">
+                    <img src="../../image/braum.jpg" alt="Image 1">
+                    <h2>Braum</h2>
+                    <p>Doté de biceps énormes, et d'un cœur plus grand encore, Braum est un héros sublimé que tout Freljord admire. Lors de tous les banquets au nord de Frostheld, on rend hommage à sa force légendaire. On raconte qu'il a abattu une forêt entière de chênes en une seule nuit, ou encore qu'il a réduit en miettes une montagne à coups de poing. Armé de son bouclier, une porte enchantée forgée en des temps anciens, Braum parcourt le Nord gelé en protecteur enjoué, vient en aide aux personnes vulnérables et travaille à instaurer la paix dont il rêve à Freljord.</p>
+                </li>
+                <li class="carousel-slide" id="s2">
+                    <img src="../../image/anivia.jpg" alt="Image 2">
+                    <h2>Anivia</h2>
+                    <p>Anivia est un esprit ailé bienveillant qui subit des cycles sans fin de vie, de mort et de renaissance pour protéger Freljord. Demi-déesse née de la glace la plus froide et des vents les plus coupants, elle utilise ses pouvoirs élémentaires contre quiconque prétend troubler la paix de sa terre natale. Anivia guide et protège les tribus du Nord, qui la vénèrent comme un symbole d'espoir et la promesse de grands changements. Elle combat de tout son être, sachant que son sacrifice fera vivre sa légende et qu'elle renaîtra dans un lendemain nouveau.</p>
+                </li>
+                <li class="carousel-slide" id="s3">
+                    <img src="../../image/lissandra.jpg" alt="Image 3">
+                    <h2>Lissandra</h2>
+                    <p>Beaucoup pensent que Lissandra, maîtresse calfeutrée des Gardiens du givre, est une sainte qui apporte sagesse et santé aux tribus de Freljord. La vérité est plus sinistre. Lissandra utilise sa magie élémentaire pour transformer la glace pure en quelque chose de sombre et de terrible, emmurant ou empalant ceux qui risqueraient de révéler ses plus noirs secrets. En vérité, les conséquences de ses actions passées risquent d'être le début de la fin pour Runeterra.</p>
+                </li>
+            </ul>
+    
+            <nav class="carousel-navigation">
+                <label for="slide1" class="carousel-button">1</label>
+                <label for="slide2" class="carousel-button">2</label>
+                <label for="slide3" class="carousel-button">3</label>
+            </nav>
+        </section>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <img class="logo_design" src="../../image/logo_freljord.JPG" alt="logo de la region Freljord">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='../histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='../strategie.html';">Comment jouer ?</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+</body>

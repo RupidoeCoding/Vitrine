@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none; /*Si le navigateur utiliser a webkit*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: whitesmoke;
+  line-height: 1.6;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex:1;
+}
+
+h2,h3{
+  text-align: center;
+  margin-bottom: 1em;
+}
+p{
+  padding: 1em;
+  text-align: center;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  
+}
+
+button{
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+figcaption{
+  color: white;
+}
+
+.backindex{
+  background-color: black;
+}
+
+#video_fond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  animation: fonduvideo 2s ease-in forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fonduvideo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#lol2025 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img{
+  width: 100%;
+}
+
+.hautindex{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#encre {
+  position: relative;
+}
+
+/* Parallax */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax section {
+  position: relative;
+  transform: translateZ(0);
+  will-change: transform;
+  margin-top: 4em;
+}
+
+#boutonConfirm{
+	line-height:50px;
+	text-align:center;
+	vertical-align: middle;
+	color:black;
+	text-decoration:none;	
+}
+
+#boutonidentification{
+  color:white;
+}
+
+.void { background-color: #770B99; }
+.targon { background-color: #544F51; }
+.shurima { background-color: #AB9F1F; }
+.piltover { background-color: #133E82; }
+.zaun { background-color: #13B57D; }
+.noxus { background-color: #8F1B31; }
+.ixtal { background-color: #229C14; }
+.ionia { background-color: #D952C0; }
+.ile_obscures { background-color: #0A6D75; }
+.freljord { background-color: #0E13A8; }
+.demacia { background-color: #ABABAB; }
+.bilgewater { background-color: #33AEC7; }
+
+#voidbouton {top: 84%; left:61%;}
+#targonbouton {top: 72%; left:40%;}
+#shurimabouton {top: 66%; left:52%;}
+#piltoverzaunbouton {top: 50%; left:58%;}
+#noxusbouton {top: 33%; left:45%;}
+#ixtalbouton {top: 62%; left:63%;}
+#ioniabouton {top: 25%; left:75%;}
+#ile_obscuresbouton {top: 70%; left:88%;}
+#freljordbouton {top: 20%; left:30%;}
+#demaciabouton {top: 38%; left:30%;}
+#bilgewaterbouton {top: 55%; left:76%;}
+
+::-webkit-scrollbar {
+  width: 14px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #FF4654;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0A756;
+  border-radius: 8px;
+  border: 4px solid #FF4654;
+}
+
+@media (max-width: 768px) {
+  .titre {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+
+  .stylebutton {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,204 @@
+.centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a237e, #ffd700);
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  animation: pluie_sanglante;  
+}
+
+.centrer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.formulaire {
+  margin-right: 8em;;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 2.5em;
+  border-radius: 0.3em;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  width: 100%;
+  max-width: 30em;
+  text-align: center;
+  color: white;
+  position: relative;
+  flex-shrink:0;
+}
+
+.formulaire th {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+.formulaire td {
+  padding: 0.5em;
+  text-align: left;
+  color: white;
+}
+
+.formulaire label {
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.formulaire input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+  background: #1a1a2e;
+  color: white;
+}
+
+.formulaire input:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.listemessage {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#messageMail,
+#messageMDP,
+#messageName,
+#messagePrenom,
+#messageDate,
+#messagePseudo,
+#messageMDP1 {
+  color: #ff1744;
+  font-size: 0.9em;
+}
+
+#boutonConfirm {
+  background: linear-gradient(135deg, #1a237e, #ffd700);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 0.7em;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+#boutonConfirm:hover,
+#boutonConfirm:focus {
+  background: linear-gradient(135deg, #ffd700, #1a237e);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.chatbox {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 1.5em;
+  border-radius: 0.3em;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  width: 30em;
+  height: 40.8em;
+  color: white;
+  position: relative;
+  flex-shrink: 0;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbox-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1em;
+  padding-right: 0.5em;
+}
+
+.chat-message {
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.chatbox-input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #1a1a2e;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.chatbox-input:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.chatbox-btn {
+  background: linear-gradient(135deg, #1a237e, #ffd700);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 0.7em;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.chatbox-btn:hover, .chatbox-btn:focus {
+  background: linear-gradient(135deg, #ffd700, #1a237e);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+  transform: scale(1.05);
+}
+
+#pluie-sang {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  background: transparent;
+}
+
+@media (max-width: 1200px) {
+  .centrer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulaire {
+    margin: 2em;
+    max-width: 80%;
+  }
+
+  .chatbox {
+    margin:2em;
+    width: 80%;
+  }
+}
+

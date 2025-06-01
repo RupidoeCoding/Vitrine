@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>La stratégie sur LOL</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La stratégie du jeux League Of Legends">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Stratégie">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../image/logo_riot.ico" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/formulaire.css">
+
+</head>
+
+<body>
+    <!--Haut de Page-->
+	<noscript>Utilisation du Javascript la confirmation du formulaire et de la pluie rouge</noscript>
+        <header class="titre backgroundhautbas">
+            <img src="../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+            <h1>Formulaire d'inscription</h1>
+            <img src="../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+        </header>
+    <!--Zone principale-->
+    <main>
+    <!--Form d'inscription -->
+	<section class="centrer">
+		<canvas id="pluie-sang"></canvas>
+		<table class="formulaire">
+			<thead>
+				<tr>
+					<th colspan="2">Formulaire</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><label for="name">Nom</label></td>
+					<td><input type="text" id="name" name="user_name"></td>
+				</tr>
+				<tr>
+					<td><label for="prenom">Prénom</label></td>
+					<td><input type="text" id="prenom" name="user_prenom"></td>
+				</tr>
+				<tr>
+					<td><label for="email">E-mail</label></td>
+					<td><input type="email" id="email" name="user_mail"></td>
+				</tr>
+				<tr>
+					<td><label for="birthdate">Date de naissance</label></td>
+					<td><input type="text" id="birthdate" name="user_birthdate" placeholder="jj/mm/aaaa"></td>
+				</tr>
+				<tr>
+					<td><label for="pseudo">Nom d'utilisateur</label></td>
+					<td><input type="text" id="pseudo" name="user_pseudo"></td>
+				</tr>
+				<tr>
+					<td><label for="mdp1">Mot de passe</label></td>
+					<td><input type="password" id="mdp1" name="user_mdp1"></td>
+				</tr>
+				<tr>
+					<td><label for="mdp2">Confirmer le mot de passe</label></td>
+					<td><input type="password" id="mdp2" name="user_mdp2"></td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<ul class="listemessage">
+							<li id="messageName"></li>
+							<li id="messagePrenom"></li>
+							<li id="messageMail"></li>
+							<li id="messageDate"></li>
+							<li id="messagePseudo"></li>
+							<li id="messageMDP1"></li>
+							<li id="messageMDP"></li>
+						</ul>
+					</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<button id="boutonConfirm">Confirmer</button>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Chatbox -->
+    	<section class="chatbox" id="chatbox">
+			<h2>Chatbox</h2>
+        	<article class="chatbox-messages" id="chatMessages"></article>
+        	<input type="text" id="chatInput" class="chatbox-input" placeholder="Votre message...">
+        	<button id="sendMessageBtn" class="chatbox-btn">Envoyer</button>
+    	</section>
+	</section>
+	
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='strategie.html';">Comment jouer ?</button>
+			<button class="stylebouton" onclick="window.location.href='formulaire.html';">Formulaire d'inscription</button>
+		</nav>
+        Site web sans but commerciale 
+    </footer>
+    <!--Javascript-->
+    <script src="../javascript/validation_inscription.js"></script>
+	<script src="../javascript/chatbox.js"></script>
+
+</body>

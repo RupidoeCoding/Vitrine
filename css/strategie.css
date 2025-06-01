@@ -1,0 +1,223 @@
+iframe {
+    width: 100%;
+    height: 100vh; 
+    border: none; 
+    display: block;
+  }
+
+.stratbackground {
+    background-color: #0A1428;
+}
+
+.strategie2d, .map2d, .summoners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gauche {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.gauche figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.gauche button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.droit {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.droit img {
+    max-width: 45%;
+    max-height: 80vh;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.droit p{
+    color: #C28F2C;
+    font-size: 2em;
+}
+
+.map2d {
+    flex-direction: column;
+    text-align: center;
+}
+
+.gauche2 {
+    text-align: center;
+    padding: 1em;
+}
+
+.gauche2 figure {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+.droit2 {
+    width: 400px;
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.droit2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.summoners {
+    flex-direction: row-reverse;
+    padding: 2em;
+}
+
+.gauche3 {
+    margin-right: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+}
+
+#displayvid {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #0CC6E4;
+}
+
+.droit3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.droit3 img {
+    border: 2px solid gold;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.text {
+    color: #C28F2C;
+    max-width: 80em;
+    margin: auto;
+    text-align: justify;
+}
+
+.text p{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 1200px) {
+    .strategie2d {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gauche {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .gauche button {
+        flex: 1 1 5%;
+        min-width: 100px; 
+        max-width: 150px;
+    }
+
+    .droit {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        height: 100em;
+    }
+
+    .droit img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .droit p {
+        font-size: 1.5em;
+        max-width: 90%;
+    }
+
+    .summoners {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .droit3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .gauche3 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+
+    #displayvid {
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+        transform: translateX(25%);
+    }
+
+    .text p{
+        font-size: 1.2em;
+    }
+}

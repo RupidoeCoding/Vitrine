@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ixtal</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ixtal">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Ixtal">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../image/logo_ixtal.jpg" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/histoire.css">
+</head>
+
+<body>
+    <!--Haut de Page-->
+	<header class="titre backgroundhautbas">
+        <img src="../../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Ixtal une région de Runeterra </h1>
+        <img src="../../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <section class="ixtal">
+            <article>
+				<img src="../../image/ixtal.jpg" alt= "représentation de Ixtal" class="img">
+				<p>Célèbre pour sa maîtrise de la magie élémentaire, Ixtal fut l'une des premières nations indépendantes à se joindre à l'empire de Shurima. En vérité, la culture d'Ixtal est bien plus ancienne que ça. Elle appartient à la grande diaspora de l'ouest qui a donné naissance à de nombreuses civilisations, parmi lesquelles Buhru, la magnifique Helia et Targon l'ascétique. Elle a probablement joué un rôle significatif dans la création des premiers Transfigurés.</p>
+
+				<p>Mais les mages d'Ixtal survécurent au Néant, et plus tard aux Darkin, en prenant leurs distances avec leurs voisins. Ils se retranchèrent dans la nature sauvage comme derrière une forteresse. Dans le chaos, ils avaient beaucoup perdu, mais ils avaient la ferme intention de préserver ce qui restait…</p>
+
+				<p>Aujourd'hui, la cité arcologique d'Ixaocan, perdue dans la jungle depuis des millénaires, perdure sans influence extérieure. Ayant assisté de loin à la ruine des Îles bénies et aux Guerres runiques, les Ixtali voient toutes les autres factions de Runeterra comme des parvenus et ils utilisent leur puissante magie pour éloigner les intrus.</p>
+            </article>
+        </section>
+        <section class="carousel ixtal">
+            <h2>Personnages de ixtal</h2>
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <ul class="carousel-slides">
+                <li class="carousel-slide" id="s1">
+                    <img src="../../image/neeko.jpg" alt="Image 1">
+                    <h2>Neeko</h2>
+                    <p>Originaire d'une tribu disparue de Vastayas, Neeko est capable de se fondre dans n'importe quelle foule en empruntant l'apparence des autres, allant même jusqu'à absorber un soupçon de leur état émotionnel pour différencier un instant les amis des ennemis. Personne ne sait réellement où – ni qui – peut bien être Neeko, mais ceux qui chercheront à lui faire du mal découvriront bien vite sa véritable nature… et goûteront à toute la force primordiale de son pouvoir spirituel.</p>
+                </li>
+                <li class="carousel-slide" id="s2">
+                    <img src="../../image/rengar.jpg" alt="Image 2">
+                    <h2>Rengar</h2>
+                    <p>Rengar est un féroce Vastaya chasseur de trophées qui ne vit que pour le frisson de la traque et de l'élimination des proies les plus dangereuses. Il parcourt le monde à la recherche des bêtes les plus féroces, et surtout de Kha'Zix, la créature du Néant qui lui a fait perdre un œil. Rengar ne piste ses proies ni pour la nourriture ni pour la gloire, mais pour la beauté de la poursuite en elle-même.</p>
+                </li>
+                <li class="carousel-slide" id="s3">
+                    <img src="../../image/zyra.jpg" alt="Image 3">
+                    <h2>Zyra</h2>
+                    <p>Née au cours d'une ancienne catastrophe magique, Zyra est la colère de la nature incarnée : mélange de plante et d'humain, faisant émerger de nouvelles pousses à chaque pas. Elle considère les nombreux mortels de Valoran comme de simples proies pour sa progéniture végétale, et les éliminer avec ses gerbes d'épines ne lui pose aucun problème. Bien que nul ne connaisse ses vrais objectifs, Zyra erre de par le monde, suivant son instinct qui est de coloniser toujours plus de terres et d'en exterminer toutes les autres formes de vie.</p>
+                </li>
+            </ul>
+    
+            <nav class="carousel-navigation">
+                <label for="slide1" class="carousel-button">1</label>
+                <label for="slide2" class="carousel-button">2</label>
+                <label for="slide3" class="carousel-button">3</label>
+            </nav>
+        </section>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <img class="logo_design" src="../../image/logo_ixtal.jpg" alt="logo de la region Ixtal">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='../histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='../strategie.html';">Comment jouer ?</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+</body>

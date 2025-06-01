@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Targon</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Targon">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Targon">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../image/logo_targon.JPG" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/histoire.css">
+
+</head>
+
+<body>
+    <!--Haut de Page-->
+    <header class="titre backgroundhautbas">
+        <img src="../../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Targon une région de Runeterra </h1>
+        <img src="../../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <section class="targon">
+            <article>
+                <img src="../../image/targon.jpg" alt= "représentation de targon" class="img">
+                <p>Du haut de son imposante aiguille de pierres stériles, le Mont Targon est le point culminant de la plus haute chaîne de montagnes de Runeterra.</p>
+                <p>S'élevant aux confins de toute civilisation, il n'est accessible qu'aux explorateurs les plus déterminés. De nombreuses légendes entourent le Mont Targon, et comme tous les lieux mythologiques, il enflamme l'imagination des rêveurs, des fous, de tous ceux qui sont assoiffés d'aventure. </p>
+                <p>Certaines de ces âmes courageuses tentent même de gravir l'insurmontable montagne, à la recherche peut-être de l'illumination ou de la gloire, ou répondant simplement au désir ardent d'en contempler le sommet</p>
+                <p>L'ascension vers le sommet est pratiquement impossible, et les rares élus qui parviennent à l'atteindre en vie ne parlent presque jamais de ce qu'ils y ont vu. Certains en reviennent avec une expression hantée et vide dans le regard ; d'autres deviennent totalement méconnaissables, imprégnés de la Manifestation d'un pouvoir surhumain venu d'un autre monde, chargés d'un destin que peu de mortels pourraient comprendre.</p>
+            </article>
+        </section>
+
+        <section class="carousel targon">
+            <h2>Personnages de Targon</h2>
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+            <input type="radio" name="carousel" id="slide4">
+    
+            <ul class="carousel-slides">
+                <li class="carousel-slide" id="s1">
+                    <img src="../../image/diana.webp" alt="Image 1">
+                    <h2>Diana</h2>
+                    <p>Armée de son croissant de lune et vêtue d'une armure étincelante évoquant les reflets de la nuit sur un paysage enneigé, Diana incarne la puissance de la lune. L'essence d'une Manifestation venue d'au-delà des plus hauts sommets de Targon imprègne Diana : plus tout à fait humaine, elle lutte pour comprendre sa puissance et son rôle en ce monde.</p>
+                </li>
+                <li class="carousel-slide" id="s2">
+                    <img src="../../image/leona.jpg" alt="Image 2">
+                    <h2>Leona</h2>
+                    <p>Imprégnée de l'énergie du soleil, Leona est une guerrière sainte des Solaris qui défend le Mont Targon ; elle combat avec sa Lame du zénith et son Bouclier de l'aube. Sa peau brûle d'éclats ardents et ses yeux crépitent au rythme de la Manifestation céleste qui l'habite. Équipée d'une armure d'or et affligée par le terrible fardeau de connaissances antiques, Leona apporte à certains l'illumination, à d'autres la mort.</p>
+                </li>
+                <li class="carousel-slide" id="s3">
+                    <img src="../../image/pantheon.webp" alt="Image 3">
+                    <h2>Pantheon</h2>
+                    <p>Autrefois l'hôte réticent de la Manifestation de la Guerre, Atreus a survécu à la mort de la puissance céleste qui l'habitait, refusant de succomber au coup qui arracha les étoiles mêmes des cieux. Avec le temps, il apprit à accepter le pouvoir de sa mortalité, et la résistance bornée qui y est associée. Atreus s'oppose désormais aux entités divines en tant que Pantheon, ressuscité parmi les mortels, et manie les armes de la Manifestation animées par sa volonté inébranlable sur le champ de bataille.</p>
+                </li>
+				<li class="carousel-slide" id="s4">
+                    <img src="../../image/aphelios.jpg" alt="Image 4">
+                    <h2>Aphelios</h2>
+                    <p>Émergeant des ombres au clair de lune, Aphelios abat ceux qui voudraient anéantir sa foi sans un mot ; ses armes et sa précision mortelle parlent pour lui. Bien qu'animé par un poison qui le rend muet, il est guidé par sa sœur, Alune, qui depuis son lointain temple sacré lui confère un arsenal d'armes en pierre de lune. Tant que la lune brillera dans le ciel, Aphelios ne sera jamais seul.</p>
+                </li>
+            </ul>
+    
+            <nav class="carousel-navigation">
+                <label for="slide1" class="carousel-button">1</label>
+                <label for="slide2" class="carousel-button">2</label>
+                <label for="slide3" class="carousel-button">3</label>
+				<label for="slide4" class="carousel-button">favori</label>
+            </nav>
+        </section>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <img class="logo_design" src="../../image/logo_targon.JPG" alt="logo de la region targon">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='../histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='../strategie.html';">Comment jouer ?</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+</body>

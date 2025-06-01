@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Shurima</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shurima">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Shurima">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../image/logo_shurima.JPG" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/histoire.css">
+
+</head>
+
+<body>
+    <!--Haut de Page-->
+    <header class="titre backgroundhautbas">
+        <img src="../../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Shurima une région de Runeterra </h1>
+        <img src="../../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <section class="shurima">
+            <article>
+                <img src="../../image/shurima.webp" alt= "représentation de shurima" class="img">
+                <p>L'empire de Shurima était autrefois une civilisation florissante qui s'étendait sur un continent tout entier. Forgé en un temps révolu par les puissants dieux-guerriers de l'Ost des Transfigurés, il scella l'union de tous les peuples disparates du sud et imposa entre eux une paix durable.</p>
+                <p>Rares étaient ceux qui osaient se rebeller. Ceux qui le faisaient, parmi lesquels la nation maudite d'Icathia, étaient broyés sans aucune pitié.</p>
+                <p>Pourtant, après plusieurs millénaires de croissance et de prospérité, la capitale fut transformée en un champ de ruines par l'échec de l'Ascension du dernier empereur de Shurima. Avec le temps, le récit de cette gloire passée devint un simple mythe. De nos jours, la plupart des habitants nomades du désert de Shurima luttent pour leur survie dans un territoire inhospitalier. Certains défendent de petits postes avancés construits autour de quelques oasis, tandis que d'autres s'enfoncent dans ces catacombes oubliées à la recherche des richesses qui y sont sûrement enterrées. D'autres encore acceptent du travail de mercenaire, empochant leur récompense avant de disparaître à nouveau dans les sables sans foi ni loi.</p>
+                <p>Quelques-uns, pourtant, osent encore rêver d'une réémergence du passé. De fait, les tribus sont depuis peu agitées par un murmure qui provient du cœur du désert : leur empereur Azir serait de retour pour les mener vers un nouvel âge d'or.</p>
+            </article>
+        </section>
+
+        <section class="carousel shurima">
+            <h2>Personnages de Shurima</h2>
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <ul class="carousel-slides">
+                <li class="carousel-slide" id="s1">
+                    <img src="../../image/azir.jpg" alt="Image 1">
+                    <h2>Azir</h2>
+                    <p>Azir fut l'empereur mortel de Shurima en des temps très lointains, un homme fier dressé au bord de l'immortalité. Son orgueil lui valut d'être trahi et assassiné à l'heure de son triomphe ; mais des millénaires se sont écoulés et il revient sous la forme d'un être transfiguré à l'immense puissance. Sa cité ensevelie ayant ressurgi des sables, Azir cherche à rendre sa gloire passée à Shurima.</p>
+                </li>
+                <li class="carousel-slide" id="s2">
+                    <img src="../../image/renek.jpg" alt="Image 2">
+                    <h2>Renekton</h2>
+                    <p>Originaire du désert brûlant de Shurima, Renekton est un terrifiant Transfiguré animé par la rage. Il était autrefois le champion le plus respecté de l'empire, dont il avait mené les armées à la victoire à maintes reprises. Cependant, après la chute du Disque solaire, Renekton fut enfoui sous les sables. Petit à petit, alors que le monde changeait, il sombra dans la démence. Désormais libre, il est consumé par le désir de se venger de son frère, Nasus, qu'il juge responsable des siècles qu'il a passés dans les ténèbres.</p>
+                </li>
+                <li class="carousel-slide" id="s3">
+                    <img src="../../image/ksante.jpg" alt="Image 3">
+                    <h2>K'sante</h2>
+                    <p>Rebelle et courageux, K'Santé combat les bêtes colossales et les Transfigurés impitoyables qui menacent son foyer convoité de Nazumah, une oasis lovée au cœur des sables de Shurima. Après s'être séparé de son ancien partenaire, K'Santé comprend que pour devenir un guerrier digne de diriger sa ville, il doit apprendre à brider son désir de victoire qui vire à l'obsession. Ce n'est qu'à ce prix qu'il pourra éviter les écueils de son propre orgueil et trouver en lui la sagesse nécessaire à la protection de son peuple.</p>
+                </li>
+            </ul>
+    
+            <nav class="carousel-navigation">
+                <label for="slide1" class="carousel-button">1</label>
+                <label for="slide2" class="carousel-button">2</label>
+                <label for="slide3" class="carousel-button">3</label>
+            </nav>
+        </section>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <img class="logo_design" src="../../image/logo_shurima.JPG" alt="logo de la region shurima">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='../histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='../strategie.html';">Comment jouer ?</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+</body>

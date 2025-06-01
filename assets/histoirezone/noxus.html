@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Noxus</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Noxus">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Noxus">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../image/logo_noxus.jpg" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/histoire.css">
+</head>
+
+<body>
+    <!--Haut de Page-->
+	<header class="titre backgroundhautbas">
+        <img src="../../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Noxus une région de Runeterra </h1>
+        <img src="../../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <section class="noxus">
+            <article>
+				<img src="../../image/noxus.webp" alt= "représentation de Noxus" class="img">
+				<p>Noxus est un puissant empire à la réputation terrifiante. Pour les étrangers qui vivent hors de ses frontières, il s'agit d'un pays brutal, expansionniste et agressif, mais ceux qui observent au-delà de cette façade belliqueuse découvrent une société ouverte, où la force et les talents du peuple sont valorisés et cultivés.</p>
+
+				<p>Les Noxiis formaient autrefois un groupe de redoutables tribus barbares, jusqu'à ce qu'ils prennent d'assaut et s'installent dans l'ancienne cité qui constitue aujourd'hui le cœur de leur empire. Menacés de toutes parts, ils sont allés au-devant de leurs ennemis pour combattre, repoussant leurs frontières plus loin chaque année. Cette lutte pour la survie a fait des Noxiens modernes un peuple fier pour qui la force prime sur tout le reste, bien que cette force puisse s'exprimer de différentes façons.</p>
+
+				<p>N'importe quelle personne peut s'élever à une position de pouvoir et de respect à Noxus, indépendamment de son statut social, de ses antécédents, de son lieu d'origine ou de sa richesse, du moment qu'elle fait montre des aptitudes nécessaires. Ceux qui sont capables de manipuler la magie sont tenus en haute estime et activement recherchés, dans l'espoir que leurs talents uniques puissent être affinés et mis au service de l'empire.</p>
+
+				<p>Pourtant, malgré cet idéal méritocratique, les vieilles maisons nobles conservent un pouvoir considérable... et certains craignent que la plus grande menace qui pèse sur Noxus ne vienne pas de ses ennemis, mais bien de l'intérieur.</p>
+            </article>
+        </section>
+        <section class="carousel noxus">
+            <h2>Personnages de Noxus</h2>
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <ul class="carousel-slides">
+                <li class="carousel-slide" id="s1">
+                    <img src="../../image/swain.jpg" alt="Image 1">
+                    <h2>swain</h2>
+                    <p>Jericho Swain est le chef visionnaire de Noxus, cette nation expansionniste qui ne respecte que la force. Bien que déchu et blessé pendant les guerres ioniennes, il a pris le contrôle de l'empire avec une féroce détermination… et une nouvelle main, démoniaque, a remplacé celle qu'il a perdue au combat. Désormais, Swain dirige ses armées sur la ligne de front, face à des ténèbres qu'il est le seul à percevoir à l'horizon, dans le vol des corbeaux attirés par les cadavres qui l'entourent. Dans un tourbillon de sacrifices et de regrets, le plus grand secret entre tous, c'est que le véritable ennemi est à l'intérieur.</p>
+                </li>
+                <li class="carousel-slide" id="s2">
+                    <img src="../../image/leblanc.jpg" alt="Image 2">
+                    <h2>Leblanc</h2>
+                    <p>Mystérieuse, même aux yeux des autres membres de la Rose noire, LeBlanc n'est que l'un des nombreux noms de la femme pâle qui manipule le destin de Noxus depuis ses premiers jours. Utilisant sa magie pour se cloner, elle peut être partout, devant tout le monde, et même à plusieurs endroits en même temps. Les objectifs que poursuit LeBlanc, de même que sa véritable identité, sont à l'image de ses complots : totalement insaisissables.</p>
+                </li>
+                <li class="carousel-slide" id="s3">
+                    <img src="../../image/mel.jpg" alt="Image 3">
+                    <h2>Mel</h2>
+                    <p>Mel Medarda est l'héritière présumée de la famille Medarda, autrefois l'une des plus puissantes familles de Noxus. Aristocrate gracieuse en apparence, elle est en réalité une politicienne chevronnée, soucieuse de connaître les moindres détails de tous ceux qu'elle rencontre. Après sa rencontre avec la mystérieuse Rose noire, Mel découvre l'importance de la supercherie de sa mère et se retrouve confrontée à une situation qui échappe à son contrôle. Dotée de pouvoirs magiques fraîchement révélés, elle rentre chez elle à la recherche de réponses. Bien que beaucoup cherchent encore à tempérer la lumière qui l'habite, l'âme de Mel reste à jamais insoumise.</p>
+                </li>
+            </ul>
+    
+            <nav class="carousel-navigation">
+                <label for="slide1" class="carousel-button">1</label>
+                <label for="slide2" class="carousel-button">2</label>
+                <label for="slide3" class="carousel-button">3</label>
+            </nav>
+        </section>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <img class="logo_design" src="../../image/logo_noxus.jpg" alt="logo de la region Noxus">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='../histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='../strategie.html';">Comment jouer ?</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+</body>

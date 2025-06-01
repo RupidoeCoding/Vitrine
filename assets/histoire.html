@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>L'histoire de LOL</title> <!--Visible à côté du Favicon-->
+    <!-- Métadonnées web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="L'histoire du jeux League Of Legends">
+    <meta name="author" content="Rupidoe">
+    <meta name="keyworlds" content="League Of Legends, Histoire, Stratégie">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../image/logo_riot.ico" type="image/ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/histoire.css">
+</head>
+
+<body>
+    <!--Haut de Page-->
+    <noscript>Utilisation du Javascript pour l'effet visuel de la map</noscript>
+    <header class="titre backgroundhautbas">
+        <img src="../image/logo_lol.png" id="logo_lol" alt="Logo League of Legends" class="logo-img">
+        <h1>Carte de Runeterra</h1>
+        <img src="../image/logo_riot.ico" id="logo_riot" alt="Logo Riot" class="logo-img">
+    </header>
+   <!--Zone principale-->
+    <main>
+        <div class="carte_entiere ">
+            <img src="../image/map_complete.jpg" alt="Les regions de Runeterra" usemap="#runeterra" class ="carte">
+            <canvas id="vent"></canvas>
+            <map name="runeterra"></map>
+
+            <button onclick="window.location.href='histoirezone/freljord.html';"  class="boutonmap" id="freljordbouton" data-text="Freljord">
+                <img src="../image/logo_freljord.JPG" alt="logoFreljord" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/ionia.html'" class="boutonmap" id="ioniabouton" data-text="Ionia">
+                <img src="../image/logo_ionia.JPG" alt="logoIonia" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/noxus.html'" class="boutonmap" id="noxusbouton" data-text="Noxus">
+                <img src="../image/logo_noxus.JPG" alt="logoNoxus" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/demacia.html'" class="boutonmap" id="demaciabouton" data-text="Demacia">
+                <img src="../image/logo_demacia.JPG" alt="logoDemacia" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/bilgewater.html'" class="boutonmap" id="bilgewaterbouton" data-text="Bilgewater">
+                <img src="../image/logo_bilgewater.png" alt="logoBilgewater" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/targon.html'" class="boutonmap" id="targonbouton" data-text="Targon">
+                <img src="../image/logo_targon.JPG" alt="logoTargon" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/shurima.html';" class="boutonmap" id="shurimabouton" data-text="Shurima">
+                <img src="../image/logo_shurima.JPG" alt="logoShurima" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/piltover.html'" class="boutonmap" id="piltoverzaunbouton" data-text="Piltover & Zaun">
+                <img src="../image/logo_piltover-zaun.jpg" alt="logoPiltover&Zaun" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/iles_obscures.html'" class="boutonmap" id="ile_obscuresbouton" data-text="Iles obscures">
+                <img src="../image/logo_iles.jpg" alt="logoShadowiles" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/ixtal.html'" class="boutonmap" id="ixtalbouton" data-text="Ixtal">
+                <img src="../image/logo_ixtal.jpg" alt="logoIxtal" class="boutonimage">
+            </button>
+
+            <button onclick="window.location.href='histoirezone/void.html'" class="boutonmap" id="voidbouton" data-text="Void">
+                <img src="../image/logo_void.JPG" alt="logoVoid" class="boutonimage">
+            </button>
+        </div>
+    </main>
+    <!--Bas de Page-->
+    <footer class="backgroundhautbas">
+        <nav class="bouton">
+            <button class="stylebouton" onclick="window.location.href='../index.html';">Qu'est-ce que le League of Legends ?</button>
+            <button class="stylebouton" onclick="window.location.href='histoire.html';">Regions</button>
+            <button class="stylebouton" onclick="window.location.href='strategie.html';">Comment jouer ?</button>
+            <button class="stylebouton" onclick="window.location.href='formulaire.html';">Formulaire d'inscription</button>
+        </nav>
+        Site web sans but commerciale 
+    </footer>
+    <!--Javascript-->
+    <script src="../javascript/map.js"></script>
+</body>
